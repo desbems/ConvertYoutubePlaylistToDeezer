@@ -1,10 +1,11 @@
+### This Project is in it's early stage
+
 ## How to install
 To install dependencies use : `pip install -r requirements.txt`
 
 ## Needed
-You will need a json file to run for the youtube part
-You will also need the id for deezer part
-## Google json
+This script needs both deezer api and Google Oauth
+## Google Oauth
 * Go to google console
 * Create a project
 * Click on APIs & auth -> APIs
@@ -14,7 +15,8 @@ You will also need the id for deezer part
 * Use the json in your project folder and change client_secrets_file with the name of your file
 
 ## Run
-1 : Run auth.py
-2 : YoutubeLikedPlaylist for your youtube likes// youtubePlaylist for a choosen playlist
-3 : Run SoundFinder, a text file will be created
-4 : Run adder to add the songs found
+1. Run auth.py
+2. YoutubeLikedPlaylist for your youtube likes// youtubePlaylist for a choosen playlist
+3. Run SoundFinder, a text file will be created
+4. Run adder to add the songs found
+

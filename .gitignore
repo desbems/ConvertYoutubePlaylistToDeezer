@@ -1,0 +1,4 @@
+.DS_Store
+.env
+code.json
+secret.py
