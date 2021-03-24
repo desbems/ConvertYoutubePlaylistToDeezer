@@ -1,8 +1,9 @@
 import requests
-
+import re
 #TODO: Remove videos.txt after use
 #TODO: Create a log file with datetime
 #TODO: Ability to choose playlist
+
 with open('log.txt', 'a') as log:
     with open('videos.txt', 'r') as f:
         te = f.read().splitlines()
@@ -16,7 +17,8 @@ with open('log.txt', 'a') as log:
             if len(split) == 2:
                 artist_name.append(split[0])
                 d = split[1].strip()
-                song_name.append(d)
+                d = re.sub(r'\(.*\)', '', d) #* remove "(" for better relevancy
+                song_name.append(d.strip())
         print(artist_name)
         print(song_name)
 #FIXME: If song is present two times, remove one
